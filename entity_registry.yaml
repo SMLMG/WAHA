@@ -1,0 +1,76 @@
+media_player.apple_tv:
+  name:
+  platform: apple_tv
+  unique_id: 85815f1443da2eae25a4861affb0b3d7243492f0fd49e491ef12c6e3028d7d84
+media_player.apple_tv_2:
+  name:
+  platform: apple_tv
+  unique_id: df12eb6225bc94b80bf27b79e0e96807a90f5d7cc728df944271a31a26ee0258
+remote.apple_tv:
+  name:
+  platform: apple_tv
+  unique_id: 85815f1443da2eae25a4861affb0b3d7243492f0fd49e491ef12c6e3028d7d84
+remote.apple_tv_2:
+  name:
+  platform: apple_tv
+  unique_id: df12eb6225bc94b80bf27b79e0e96807a90f5d7cc728df944271a31a26ee0258
+media_player.office:
+  name: Sonos Office
+  platform: sonos
+  unique_id: RINCON_7828CAA0B40601400
+media_player.bedroom:
+  name: Sonos MBR - Play 3's
+  platform: sonos
+  unique_id: RINCON_5CAAFD5F263201400
+media_player.tv_room:
+  name: Sonos Den
+  platform: sonos
+  unique_id: RINCON_7828CAA0B2F001400
+media_player.living_room_2:
+  name: Sonos LR - Play 3's for Dolby/PCM
+  platform: sonos
+  unique_id: RINCON_5CAAFD5F468001400
+media_player.dining_room:
+  name: Sonos DR - Play 5's
+  platform: sonos
+  unique_id: RINCON_5CAAFDF702DC01400
+media_player.living_room:
+  name: Sonos LR - Playbar and Sub
+  platform: sonos
+  unique_id: RINCON_949F3E6DF83C01400
+media_player.family_room_tv:
+  name:
+  platform: cast
+  unique_id: 7e54b235-5b61-24ee-c857-afc3f45bb5ea
+media_player.den_tv:
+  name:
+  platform: cast
+  unique_id: a7133194-9578-4d73-801c-8d232575424b
+media_player.microsoft_edge:
+  name:
+  platform: plex
+  unique_id: u2thhrc10o92v583jk0okjo7
+media_player.stephen_mark_ipad_pro:
+  name:
+  platform: plex
+  unique_id: 6AE5771C-0218-4377-BF45-166AABD0EBC4
+climate.master_bedroom:
+  name:
+  platform: nest
+  unique_id: 6cOPsZiHKCzNovbB4Ij7iRaORsQGvQzo
+climate.entryway:
+  name:
+  platform: nest
+  unique_id: 6cOPsZiHKCzgssvHbDcATBaORsQGvQzo
+climate.game_room:
+  name:
+  platform: nest
+  unique_id: 6cOPsZiHKCyTp4hMg85TRxaORsQGvQzo
+climate.office:
+  name:
+  platform: nest
+  unique_id: 6cOPsZiHKCwM9JXBICug4xaORsQGvQzo
+media_player.microsoft_edge_2:
+  name: Plex Media Server
+  platform: plex
+  unique_id: e96rx19n60hys5tv4errhkoh
