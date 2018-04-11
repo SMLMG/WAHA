@@ -1,0 +1,118 @@
+Family_Presence:
+  name: Family Presence
+  entities:
+    - device_tracker.devtestiphonelan
+    - input_select.devtestiphonelan_status
+#
+Environmental:
+  name: Environmental States
+  entities:
+    - sun.sun
+    - sensor.yr_symbol
+    - sensor.pws_alerts
+    - sensor.pws_temp_f
+    - sensor.pws_relative_humidity
+    - sensor.pws_feelslike_f
+    - sensor.pws_heat_index_f
+    - sensor.pws_uv
+    - sensor.pws_wind_mph
+    - sensor.pws_dewpoint_f
+    - sensor.pws_visibility_mi
+    - sensor.pws_weather_1h
+    - sensor.pws_weather_1d  
+#
+System_Status:
+  name: System States
+  entities:
+    - sensor.ssl_eta
+    - sensor.disk_use_percent_home
+    - sensor.load_1m
+    - sensor.load_5m
+    - sensor.load_15m
+    - sensor.memory_use
+    - sensor.memory_free
+    - sensor.swap_use
+    - sensor.swap_free 
+#
+Dyson_Status_Kitchen:
+  name: Dyson Status Kitchen
+  entities:
+    - sensor.kitchen_air_quality
+    - sensor.kitchen_dust
+    - sensor.kitchen_filter_life
+#
+Dyson_Status_Office:
+  name: Dyson Status Office
+  entities:
+    - sensor.office_air_quality
+    - sensor.office_dust
+    - sensor.office_filter_life
+#
+Nest_Humidity:
+  name: Nest Indoor Humidity Readings
+  entities:
+    - sensor.entryway_thermostat_humidity
+    - sensor.game_room_thermostat_humidity
+    - sensor.master_bedroom_thermostat_humidity
+    - sensor.office_thermostat_humidity
+#
+Nest_Status_Entryway:
+  name: Nest Status - Entryway
+  entities:
+    - binary_sensor.entryway_thermostat_online
+    - sensor.entryway_thermostat_hvac_state
+    - binary_sensor.entryway_thermostat_is_locked
+    - sensor.entryway_thermostat_operation_mode
+    - binary_sensor.entryway_thermostat_fan
+    - binary_sensor.entryway_thermostat_has_leaf
+    - binary_sensor.entryway_thermostat_is_using_emergency_heat
+#
+Nest_Status_Game_Room:
+  name: Nest Status - Game Room
+  entities:
+    - binary_sensor.game_room_thermostat_online
+    - sensor.game_room_thermostat_hvac_state
+    - binary_sensor.game_room_thermostat_is_locked
+    - sensor.game_room_thermostat_operation_mode
+    - binary_sensor.game_room_thermostat_fan
+    - binary_sensor.game_room_thermostat_has_leaf
+    - binary_sensor.game_room_thermostat_is_using_emergency_heat
+#
+Nest_Status_Master_Bedroom:
+  name: Nest Status - Master Bedroom
+  entities:
+    - binary_sensor.master_bedroom_thermostat_online
+    - sensor.master_bedroom_thermostat_hvac_state
+    - binary_sensor.master_bedroom_thermostat_is_locked
+    - sensor.master_bedroom_thermostat_operation_mode
+    - binary_sensor.master_bedroom_thermostat_fan
+    - binary_sensor.master_bedroom_thermostat_has_leaf
+    - binary_sensor.master_bedroom_thermostat_is_using_emergency_heat
+#
+Nest_Status_Office:
+  name: Nest Status - Office
+  entities:
+    - binary_sensor.office_thermostat_online
+    - sensor.office_thermostat_hvac_state
+    - binary_sensor.office_thermostat_is_locked
+    - sensor.office_thermostat_operation_mode
+    - binary_sensor.office_thermostat_fan
+    - binary_sensor.office_thermostat_has_leaf
+    - binary_sensor.office_thermostat_is_using_emergency_heat
+#
+Nest_Status_Overview:
+  name: Nest Status Overview
+  view: yes
+  entities:
+  - group.Nest_Status_Entryway
+  - group.Nest_Status_Game_Room
+  - group.Nest_Status_Master_Bedroom
+  - group.Nest_Status_Office
+#
+Dyson_Status_Overview:
+  name: Dyson Status Overview
+  view: yes
+  entities:
+  - group.Dyson_Status_Kitchen
+  - group.Dyson_Status_Office
+#

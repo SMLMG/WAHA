@@ -15,7 +15,7 @@ remote.apple_tv_2:
   platform: apple_tv
   unique_id: df12eb6225bc94b80bf27b79e0e96807a90f5d7cc728df944271a31a26ee0258
 media_player.office:
-  name: Sonos Office
+  name: Sonos Office - Play 1's
   platform: sonos
   unique_id: RINCON_7828CAA0B40601400
 media_player.bedroom:
@@ -23,7 +23,7 @@ media_player.bedroom:
   platform: sonos
   unique_id: RINCON_5CAAFD5F263201400
 media_player.tv_room:
-  name: Sonos Den
+  name: Sonos Den - Play 1's
   platform: sonos
   unique_id: RINCON_7828CAA0B2F001400
 media_player.living_room_2:
@@ -74,3 +74,15 @@ media_player.microsoft_edge_2:
   name: Plex Media Server
   platform: plex
   unique_id: e96rx19n60hys5tv4errhkoh
+sensor.stephen_mark_iphone_x_battery_level:
+  name:
+  platform: ios
+  unique_id: level_stephen_mark_iphone_x
+sensor.stephen_mark_iphone_x_battery_state:
+  name:
+  platform: ios
+  unique_id: state_stephen_mark_iphone_x
+media_player.devtest_iphone:
+  name:
+  platform: plex
+  unique_id: EC015BE5-83C3-4137-A0EE-BA22A8A3F392

@@ -1,0 +1,117 @@
+binary_sensor.entryway_thermostat_has_leaf:
+  friendly_name: Nest Entryway T-STAT has leaf
+sensor.entryway_thermostat_hvac_state:
+  friendly_name: Nest Entryway T-STAT hvac state
+binary_sensor.entryway_thermostat_is_locked:
+  friendly_name: Nest Entryway T-STAT is locked
+binary_sensor.game_room_thermostat_has_leaf:
+  friendly_name: Nest Game Room T-STAT has leaf
+sensor.game_room_thermostat_hvac_state:
+  friendly_name: Nest Game Room T-STAT hvac state
+binary_sensor.game_room_thermostat_is_locked:
+  friendly_name: Nest Game Room T-STAT is locked
+binary_sensor.master_bedroom_thermostat_has_leaf:
+  friendly_name: Nest Master Bedroom T-STAT has leaf
+sensor.master_bedroom_thermostat_hvac_state:
+  friendly_name: Nest Master Bedroom T-STAT hvac state
+binary_sensor.master_bedroom_thermostat_is_locked:
+  friendly_name: Nest Master Bedroom T-STAT is locked
+binary_sensor.office_thermostat_has_leaf:
+  friendly_name: Nest Office T-STAT has leaf
+binary_sensor.office_thermostat_is_locked:
+  friendly_name: Nest Office T-STAT is locked
+sensor.office_thermostat_hvac_state:
+  friendly_name: Nest Office T-STAT hvac state
+binary_sensor.game_room_thermostat_fan:
+  friendly_name: Nest Game Room T-STAT fan
+sensor.game_room_thermostat_humidity:
+  friendly_name: Nest Game Room T-STAT humidity
+binary_sensor.game_room_thermostat_is_using_emergency_heat:
+  friendly_name: Nest Game Room T-STAT is using emergency heat
+binary_sensor.game_room_thermostat_online:
+  friendly_name: Nest Game Room T-STAT online
+sensor.game_room_thermostat_operation_mode:
+  friendly_name: Nest Game Room T-STAT operation mode
+sensor.game_room_thermostat_target:
+  friendly_name: Nest Game Room T-STAT target
+  hidden: true
+binary_sensor.entryway_thermostat_fan:
+  friendly_name: Nest Entryway T-STAT fan
+sensor.entryway_thermostat_humidity:
+  friendly_name: Nest Entryway T-STAT humidity
+binary_sensor.entryway_thermostat_is_using_emergency_heat:
+  friendly_name: Nest Entryway T-STAT is using emergency heat
+binary_sensor.entryway_thermostat_online:
+  friendly_name: Nest Entryway T-STAT online
+sensor.entryway_thermostat_operation_mode:
+  friendly_name: Nest Entryway T-STAT operation mode
+sensor.game_room_thermostat_temperature:
+  friendly_name: Nest Game Room T-STAT temperature
+  hidden: true
+fan.kitchen:
+  friendly_name: Kitchen
+sensor.kitchen_air_quality:
+  friendly_name: Dyson Kitchen air quality
+sensor.kitchen_dust:
+  friendly_name: Dyson Kitchen dust
+sensor.kitchen_filter_life:
+  friendly_name: Dyson Kitchen filter life
+sensor.kitchen_humidity:
+  friendly_name: Dyson Kitchen humidity
+  hidden: true
+sensor.kitchen_temperature:
+  friendly_name: Dyson Kitchen temperature
+  hidden: true
+binary_sensor.master_bedroom_thermostat_fan:
+  friendly_name: Nest Master Bedroom T-STAT fan
+binary_sensor.office_thermostat_fan:
+  friendly_name: Nest Office T-STAT fan
+sensor.office_thermostat_humidity:
+  friendly_name: Nest Office T-STAT humidity
+binary_sensor.office_thermostat_is_using_emergency_heat:
+  friendly_name: Nest Office T-STAT is using emergency heat
+binary_sensor.office_thermostat_online:
+  friendly_name: Nest Office T-STAT online
+sensor.office_thermostat_target:
+  friendly_name: Nest Office T-STAT target
+  hidden: true
+sensor.office_thermostat_temperature:
+  friendly_name: Nest Office T-STAT temperature
+  hidden: true
+sensor.office_thermostat_operation_mode:
+  friendly_name: Nest Office T-STAT operation mode
+sensor.office_air_quality:
+  friendly_name: Dyson Office air quality
+sensor.office_dust:
+  friendly_name: Dyson Office dust
+sensor.office_filter_life:
+  friendly_name: Dyson Office filter life
+sensor.office_humidity:
+  friendly_name: Dyson Office humidity
+  hidden: true
+sensor.office_temperature:
+  friendly_name: Dyson Office temperature
+  hidden: true
+sensor.entryway_thermostat_target:
+  friendly_name: Nest Entryway T-STAT target
+  hidden: true
+sensor.master_bedroom_thermostat_humidity:
+  friendly_name: Nest Master Bedroom T-STAT humidity
+binary_sensor.master_bedroom_thermostat_is_using_emergency_heat:
+  friendly_name: Nest Master Bedroom T-STAT is using emergency heat
+binary_sensor.master_bedroom_thermostat_online:
+  friendly_name: Nest Master Bedroom Thermostat online
+sensor.master_bedroom_thermostat_operation_mode:
+  friendly_name: Nest Master Bedroom T-STAT operation mode
+sensor.master_bedroom_thermostat_target:
+  friendly_name: Nest Master Bedroom T-STAT target
+  hidden: true
+sensor.master_bedroom_thermostat_temperature:
+  friendly_name: Nest Master Bedroom T-STAT temperature
+  hidden: true
+sensor.entryway_thermostat_temperature:
+  friendly_name: Nest Entryway T-STAT temperature
+  hidden: true
+device_tracker.devtestiphonelan:
+  friendly_name: Stephen
+group.all_devices: {}

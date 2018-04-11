@@ -21,15 +21,15 @@ frontend:
 
 # Enables configuration UI
 config:
-
+        
 http:
-  # Secrets are defined in the file secrets.yaml
+# Secrets are defined in the file secrets.yaml
   api_password: !secret api_password
   ssl_certificate: /etc/letsencrypt/live/wahasub.duckdns.org/fullchain.pem
   ssl_key: /etc/letsencrypt/live/wahasub.duckdns.org/privkey.pem
   base_url: wahasub.duckdns.org
-  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# base_url: example.duckdns.org:8123
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -37,8 +37,8 @@ http:
 # For more information, please see:
 # https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
 updater:
-  # Optional, allows Home Assistant developers to focus on popular components.
-  # include_used_components: true
+# Optional, allows Home Assistant developers to focus on popular components.
+# include_used_components: true
 
 # Discover some devices automatically
 discovery:
@@ -55,6 +55,13 @@ logbook:
 # Enables a map showing the location of tracked devices
 map:
 
+# Nmap device tracker
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 192.168.136.1/24
+    exclude:
+      - 192.168.136.10
+
 # Track the sun
 sun:
 
@@ -62,6 +69,35 @@ sun:
 sensor:
   - platform: yr
 
+# Weather Underground/Eventually remove the yr sensor when I'm ready to take over default view.
+  - platform: wunderground
+    api_key: !secret weather_underground_api_key
+    monitored_conditions:
+      - alerts
+      - temp_f
+      - feelslike_f
+      - heat_index_f
+      - relative_humidity
+      - UV
+      - dewpoint_f
+      - visibility_mi
+      - wind_mph
+      - weather_1h
+      - weather_1d
+#      
+# System Disk Consumption
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_use
+      - type: memory_free
+      - type: swap_use
+      - type: swap_free
+      - type: load_1m
+      - type: load_5m
+      - type: load_15m
+#      
 # SSL Certificate Sensor/Countdown
   - platform: command_line
     name: SSL ETA
@@ -75,7 +111,7 @@ alarm_control_panel:
     username: !secret totalconnect_username
     password: !secret totalconnect_password
     
-# Media Player
+# Media Player - assigned PLEX to different ports as I have two servers. May need to give one server default PLEX port of 32400.
 media_player:
   - platform: plex
   
@@ -90,10 +126,29 @@ dyson:
     - device_id: NM8-US-HDA0382A
       device_ip: 192.168.136.23
       
-# Z-Wave Component
+# Z-Wave Component - Will need to configure/enroll AeoTec Z Wave Stick as a primary controller through Honeywell Tuxedo
+# Touch Wifi to implement existing Z Wave components or purchase additional components and use Stick as a separate Z Wave Hub.
 zwave:
-  usb_path: /dev/ttyACM0
+    usb_path: /dev/ttyACM0
+  
+# BMW 750LI - Not yet available for the USA & Canada. Will leave the configuration here and hope for an update.
+#bmw_connected_drive:
+#  name:
+#  username: !secret bmw_username
+#  password: !secret bmw_password
+#  country: USA
 
+# Honeywell Doorbell Camera Credentials
+skybell:
+  username: !secret skybell_username
+  password: !secret skybell_password
+
+# Honeywell Doorbell Camera & Netatmo
+camera:
+  - platform: skybell
+    monitored_conditions:
+      - button
+#
 # Netatmo Presence Cameras
 netatmo:
   api_key: !secret netatmo_api_key
@@ -117,7 +172,11 @@ remote:
 nest:
    client_id: !secret nest_client_id
    client_secret: !secret nest_client_secret
-   
+ 
+# Shell scripts
+shell_command:
+    dropbox_backup: python /home/homeassistant/Dropbox-Uploader/dropbox_sync.py
+
 # Text to speech
 tts:
   - platform: google
